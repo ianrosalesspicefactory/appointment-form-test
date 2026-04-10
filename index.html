@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGA Hair Clinic Test Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <span class="date">Thursday, April 10, 2026</span>
+      <nav class="header-nav">
+        <a href="#">Sign In</a>
+        <a href="#" class="btn-subscribe">Subscribe</a>
+      </nav>
+    </div>
+    <div class="header-main">
+      <h1 class="site-title">AGA Hair Clinic Test Site</h1>
+      <p class="site-tagline">Trusted. Independent. In-depth.</p>
+    </div>
+    <nav class="category-nav">
+      <button class="cat-btn active" data-category="all">All</button>
+      <button class="cat-btn" data-category="world">World</button>
+      <button class="cat-btn" data-category="tech">Technology</button>
+      <button class="cat-btn" data-category="business">Business</button>
+      <button class="cat-btn" data-category="science">Science</button>
+      <button class="cat-btn" data-category="sports">Sports</button>
+      <button class="cat-btn" data-category="health">Health</button>
+    </nav>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-bar-wrapper">
+    <div class="search-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search articles..." />
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection"></section>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-ticker">
+      <span class="ticker-label">BREAKING</span>
+      <div class="ticker-track">
+        <span class="ticker-text">
+          Global summit on climate action concludes with landmark agreement &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          Tech giants face new antitrust scrutiny across three continents &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          Scientists confirm record ocean temperatures for third consecutive year &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          Central banks signal coordinated rate policy shift &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          Space agency announces crewed Mars mission timeline update
+        </span>
+      </div>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="content-layout">
+      <section class="articles-section">
+        <div class="articles-grid" id="articlesGrid"></div>
+        <div class="no-results hidden" id="noResults">
+          <p>No articles match your search.</p>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Trending Now</h3>
+          <ol class="trending-list" id="trendingList"></ol>
+        </div>
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Editor's Pick</h3>
+          <div class="editors-pick" id="editorsPick"></div>
+        </div>
+        <div class="sidebar-widget newsletter-widget">
+          <h3 class="widget-title">Daily Newsletter</h3>
+          <p>Get the top stories delivered to your inbox every morning.</p>
+          <input type="email" placeholder="Your email address" class="newsletter-input" />
+          <button class="newsletter-btn">Subscribe Free</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>AGA Hair Clinic Test Site</h2>
+        <p>Delivering quality journalism since 2010.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Science</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Daily Brief. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
