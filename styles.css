@@ -26,13 +26,17 @@
   --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -262,7 +266,7 @@ a:hover { color: var(--primary); }
 }
 
 @keyframes ticker {
-  0%   { transform: translateX(100vw); }
+  0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
 
@@ -279,12 +283,14 @@ a:hover { color: var(--primary); }
   align-items: start;
 }
 
+.content-layout > * { min-width: 0; }
+
 /* =============================================
    ARTICLES GRID
    ============================================= */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: 22px;
 }
 
@@ -513,17 +519,115 @@ a:hover { color: var(--primary); }
 /* =============================================
    RESPONSIVE
    ============================================= */
+
+/* Touch targets & iOS tap delay */
+.cat-btn, .newsletter-btn, .btn-subscribe {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Tablet (≤ 900px) */
 @media (max-width: 900px) {
   .content-layout { grid-template-columns: 1fr; }
   .sidebar { display: grid; grid-template-columns: 1fr 1fr; }
   .footer-content { grid-template-columns: 1fr; gap: 24px; }
 }
 
+/* Large phone (≤ 680px) */
 @media (max-width: 680px) {
   .hero-card { grid-template-columns: 1fr; }
-  .hero-image { min-height: 220px; }
+  .hero-image { min-height: 210px; }
   .hero-body { padding: 20px; }
   .sidebar { grid-template-columns: 1fr; }
   .footer-links { grid-template-columns: 1fr 1fr; }
   .articles-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobile — hide date, right-align header nav (≤ 600px) */
+@media (max-width: 600px) {
+  .date { display: none; }
+  .header-top { justify-content: flex-end; }
+  .header-nav { gap: 12px; }
+  .btn-subscribe { padding: 5px 10px; }
+}
+
+/* All iPhones — SE 1st gen through iPhone 17 Pro Max (≤ 480px)
+   Covers: 17 Pro Max ~440px, 16 Pro Max 440px, 16/17 Plus 430px,
+           16/17 Pro 402px, 14–17 standard 390–393px, SE 2nd/3rd 375px */
+@media (max-width: 480px) {
+  /* Header */
+  .header-top { padding: 8px 16px; }
+  .header-main { padding: 10px 16px 8px; }
+  .site-title { font-size: 26px; letter-spacing: -0.5px; }
+  .site-tagline { display: none; }
+  .category-nav { padding: 0 8px; gap: 0; }
+  .cat-btn { padding: 10px 10px; font-size: 11px; letter-spacing: 0; }
+
+  /* Search — 16px prevents iOS auto-zoom on focus */
+  .search-bar-wrapper { padding: 8px 16px; }
+  .search-bar input { font-size: 16px; }
+
+  /* Hero */
+  .hero-section { padding: 0 16px; margin-top: 16px; }
+  .hero-image { min-height: 185px; }
+  .hero-body { padding: 16px; }
+  .hero-body h2 { font-size: 19px; }
+  .hero-body p { font-size: 14px; margin-bottom: 14px; }
+
+  /* Ticker */
+  .ticker-label { padding: 7px 10px; font-size: 10px; letter-spacing: 1px; }
+  .ticker-text { font-size: 12px; }
+
+  /* Content */
+  .content-layout { padding: 0 16px; margin: 16px auto 28px; gap: 16px; }
+
+  /* Cards */
+  .card-image { height: 160px; }
+  .card-body { padding: 12px 14px 14px; }
+  .card-body h3 { font-size: 15px; }
+
+  /* Sidebar */
+  .sidebar-widget { padding: 16px; }
+
+  /* Newsletter — 16px prevents iOS auto-zoom on focus */
+  .newsletter-input { font-size: 16px; }
+
+  /* Footer */
+  .footer-content { padding: 24px 16px; gap: 20px; }
+  .footer-links { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { padding: 12px 16px; }
+}
+
+/* iPhone 16/17 Plus, 16/17 Pro Max (≤ 430px) */
+@media (max-width: 430px) {
+  .cat-btn { padding: 10px 9px; }
+}
+
+/* iPhone 14–17 standard + 16/17 Pro (≤ 393px) */
+@media (max-width: 393px) {
+  .site-title { font-size: 23px; }
+  .cat-btn { font-size: 10.5px; padding: 10px 8px; }
+  .hero-body h2 { font-size: 18px; }
+}
+
+/* iPhone SE 2nd/3rd gen & iPhone mini (≤ 375px) */
+@media (max-width: 375px) {
+  .site-title { font-size: 22px; }
+  .cat-btn { padding: 10px 8px; font-size: 10px; }
+  .hero-image { min-height: 170px; }
+  .hero-body h2 { font-size: 17px; }
+  .card-body h3 { font-size: 14px; }
+  .footer-links { grid-template-columns: 1fr; }
+}
+
+/* iPhone SE 1st gen (≤ 320px) */
+@media (max-width: 320px) {
+  .site-title { font-size: 18px; }
+  .cat-btn { padding: 8px 6px; font-size: 9px; }
+  .hero-image { min-height: 150px; }
+  .hero-body { padding: 12px; }
+  .hero-body h2 { font-size: 15px; }
+  .hero-body p { font-size: 13px; }
+  .card-image { height: 140px; }
+  .card-body h3 { font-size: 13px; }
 }
