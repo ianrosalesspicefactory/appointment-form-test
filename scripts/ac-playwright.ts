@@ -8,6 +8,8 @@
  *   npx tsx scripts/ac-playwright.ts --ticket AGA-900
  *   npx tsx scripts/ac-playwright.ts --ticket AGA-900 --url http://localhost:3000
  *   npx tsx scripts/ac-playwright.ts --ticket AGA-900 --no-confirm   # skip prompt (CI)
+ *   npx tsx scripts/ac-playwright.ts --ticket AGA-900 --headed        # watch the browser
+ *   npx tsx scripts/ac-playwright.ts --ticket AGA-900 --headed --slowmo 800  # watch in slow motion
  *
  * Required env vars: JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN
  * Optional env vars: APP_URL, GITHUB_SERVER_URL, GITHUB_REPOSITORY, GITHUB_RUN_ID
@@ -29,12 +31,14 @@ function getArg(flag: string): string | undefined {
   return i !== -1 ? argv[i + 1] : undefined;
 }
 
-const ticket = getArg('--ticket');
-const appUrl = getArg('--url') ?? process.env.APP_URL ?? 'http://localhost:3000';
+const ticket    = getArg('--ticket');
+const appUrl    = getArg('--url') ?? process.env.APP_URL ?? 'http://localhost:3000';
 const noConfirm = argv.includes('--no-confirm');
+const headed    = argv.includes('--headed');
+const slowMo    = headed ? Number(getArg('--slowmo') ?? '500') : 0;
 
 if (!ticket) {
-  console.error('Usage: npx tsx scripts/ac-playwright.ts --ticket <TICKET> [--url <URL>] [--no-confirm]');
+  console.error('Usage: npx tsx scripts/ac-playwright.ts --ticket <TICKET> [--url <URL>] [--headed] [--slowmo <ms>] [--no-confirm]');
   process.exit(1);
 }
 
@@ -437,7 +441,10 @@ async function main() {
   console.log(`\n🔍  Detected scenarios: ${[...intents].join(', ')}\n`);
 
   // 3. Run Playwright scenarios
-  const browser = await chromium.launch({ headless: true });
+  if (headed) {
+    console.log(`👁️   Headed mode — watch the browser (slowmo: ${slowMo}ms per action)\n`);
+  }
+  const browser = await chromium.launch({ headless: !headed, slowMo });
   const allResults: ScenarioResult[] = [];
 
   try {

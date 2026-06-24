@@ -6,8 +6,10 @@
   "scripts": {
     "start": "node server.js",
     "ac:check": "tsx scripts/ac-playwright.ts",
+    "ac:watch": "tsx scripts/ac-playwright.ts --headed --slowmo 800",
     "gen:tests": "tsx scripts/gen-tests.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:e2e:watch": "playwright test --headed --slowmo 800"
   },
   "dependencies": {
     "express": "^4.19.2"

@@ -11,11 +11,11 @@ Two tools cover the testing workflow for this project. Use both before merging a
 
 ## 1. AC Playwright Check — `npm run ac:check`
 
-Runs a headless Chromium browser against the live app server, auto-detects which scenarios to run from the Jira checklist, takes screenshots, and (optionally) posts results back to Jira.
+Runs a Chromium browser against the live app server, auto-detects which scenarios to run from the Jira checklist, takes screenshots, and (optionally) posts results back to Jira.
 
 Full usage guide: [`scripts/README.md`](../../scripts/README.md)
 
-**Quick start:**
+**Quick start (headless — no browser window):**
 
 ```bash
 # Terminal 1 — start the app
@@ -29,6 +29,37 @@ npm run ac:check -- --ticket AGA-XXX
 ```
 
 Required env vars: `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`
+
+---
+
+### Watching the browser navigate (Headed Mode)
+
+Use this when you want to **see the browser perform the test steps live** — useful for verifying a fix, debugging a failing check, or demoing the automation to the team.
+
+```bash
+# Terminal 1 — start the app
+npm start
+
+# Terminal 2 — open a real browser and watch every step
+npm run ac:watch -- --ticket AGA-XXX
+```
+
+A Chromium window opens and you will see it automatically:
+- Load the LP page
+- Click **対面相談** → **一覧から選択する**
+- Select area → prefecture → scroll to the last station card
+- Tap the last card and check for 404s
+
+Each action is slowed to **800 ms** so every step is easy to follow. The terminal prints the pass/fail report when it finishes, and the browser closes automatically.
+
+**Speed options:**
+
+```bash
+npm run ac:watch -- --ticket AGA-XXX --slowmo 1500   # slower, easier to read
+npm run ac:watch -- --ticket AGA-XXX --slowmo 300    # faster, still visible
+```
+
+> Headed mode is for **local use only**. CI always runs headless (`npm run ac:check`).
 
 ---
 

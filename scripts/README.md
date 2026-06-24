@@ -106,3 +106,54 @@ Pass the `--url` flag to test against staging or any other environment:
 ```bash
 ... npm run ac:check -- --ticket AGA-900 --url https://staging.example.com
 ```
+
+---
+
+## Watching the Browser (Headed Mode)
+
+By default the browser runs **headless** (invisible). To open a real browser window and watch every step happen automatically — navigation, clicks, scrolling — use headed mode.
+
+### Quick command
+
+```bash
+# Terminal 1 — start the app
+npm start
+
+# Terminal 2 — watch the browser run the AC check
+npm run ac:watch -- --ticket AGA-XXX
+```
+
+This opens a Chromium window. You will see the browser:
+1. Load the LP page
+2. Click **対面相談**
+3. Click **一覧から選択する**
+4. Navigate area → prefecture → station list
+5. Scroll to the last station card and tap it
+6. Take screenshots at each step
+
+Each action is slowed down by **800ms** so it is easy to follow. The terminal still prints the full report when it finishes.
+
+### Adjust the speed
+
+```bash
+# Slower — easier to follow each click
+npm run ac:watch -- --ticket AGA-XXX --slowmo 1500
+
+# Faster — quicker run, still visible
+npm run ac:watch -- --ticket AGA-XXX --slowmo 300
+```
+
+### Manual headed flag (without the npm shortcut)
+
+```bash
+JIRA_BASE_URL=https://spicefactoryphilippines.atlassian.net \
+JIRA_EMAIL=your-email@spice-factory.ph \
+JIRA_API_TOKEN="your-api-token" \
+npx tsx scripts/ac-playwright.ts --ticket AGA-XXX --headed --slowmo 800
+```
+
+### Notes
+
+- Headed mode is for **local use only** — CI always runs headless.
+- The browser window closes automatically when the script finishes.
+- Screenshots are still saved to `/tmp/ac-screenshots/<TICKET>/` even in headed mode.
