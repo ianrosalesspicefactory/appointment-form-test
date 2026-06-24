@@ -1,5 +1,5 @@
 ---
-description: Generate unit test stubs from a Jira ticket's AC checklist. Usage: /gen-unit-tests AGA-XXX [--file path/to/file.js] [--dry-run]
+description: "Generate unit test stubs from a Jira ticket's AC checklist. Usage: /gen-unit-tests AGA-XXX [--file path/to/file.js] [--dry-run]"
 ---
 
 # gen-unit-tests
