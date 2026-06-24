@@ -4,12 +4,23 @@
   "description": "AGA Hair Clinic appointment test app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "ac:check": "tsx scripts/ac-playwright.ts",
+    "gen:tests": "tsx scripts/gen-tests.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "express": "^4.19.2"
   },
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.49.0",
+    "tsx": "^4.19.0"
+  },
   "engines": {
     "node": "22.x"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
   }
 }

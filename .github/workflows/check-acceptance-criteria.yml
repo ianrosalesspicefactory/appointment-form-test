@@ -1,0 +1,225 @@
+name: PR Acceptance Gate
+on:
+  pull_request:
+    types: [opened, edited, synchronize, ready_for_review]
+
+jobs:
+
+  # Job 1 — checks Jira checklist is 100% complete
+  jira-checklist-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Extract Jira ticket from branch name
+        id: jira
+        run: |
+          TICKET=$(echo "${{ github.head_ref }}" | grep -oP '[A-Z]+-[0-9]+' | head -1)
+          if [ -z "$TICKET" ]; then
+            echo "❌ No Jira ticket found in branch name"
+            exit 1
+          fi
+          echo "ticket=$TICKET" >> $GITHUB_OUTPUT
+
+      - name: Check Jira checklist is fully complete
+        uses: actions/github-script@v7
+        env:
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        with:
+          script: |
+            const ticket = '${{ steps.jira.outputs.ticket }}';
+            const auth = Buffer.from(`${process.env.JIRA_EMAIL}:${process.env.JIRA_API_TOKEN}`).toString('base64');
+            const headers = { 'Authorization': `Basic ${auth}`, 'Accept': 'application/json' };
+
+            // Escape hatch: skip if issue has the 'skip-ac-gate' label
+            try {
+              const issueRes = await fetch(
+                `${process.env.JIRA_BASE_URL}/rest/api/3/issue/${ticket}?fields=labels`,
+                { headers }
+              );
+              if (issueRes.ok) {
+                const issueData = await issueRes.json();
+                const labels = (issueData.fields?.labels || []).map(l =>
+                  (typeof l === 'string' ? l : l.name || '').toLowerCase()
+                );
+                if (labels.includes('skip-ac-gate')) {
+                  console.log(`⏭️ Skipping AC gate for ${ticket} — 'skip-ac-gate' label found`);
+                  return;
+                }
+              }
+            } catch(e) {
+              console.log('Could not fetch issue labels:', e.message);
+            }
+
+            // Attempt 1: Olex Checklists for Jira Cloud (returns array of item objects)
+            let checkedFromArray = null;
+            let totalFromArray = null;
+            try {
+              const res = await fetch(
+                `${process.env.JIRA_BASE_URL}/rest/checklist/1.0/checklist/${ticket}`,
+                { headers }
+              );
+              if (res.ok) {
+                const data = await res.json();
+                console.log('Checklist API response:', JSON.stringify(data).slice(0, 500));
+                const items = Array.isArray(data.items) ? data.items
+                            : Array.isArray(data.checklist) ? data.checklist
+                            : Array.isArray(data) ? data
+                            : null;
+                if (items) {
+                  totalFromArray = items.length;
+                  checkedFromArray = items.filter(i =>
+                    i.checked === true || i.isChecked === true ||
+                    i.status === 'done' || i.status === 'DONE' || i.state === 'checked'
+                  ).length;
+                }
+              }
+            } catch(e) {
+              console.log('Olex endpoint failed:', e.message);
+            }
+
+            if (checkedFromArray !== null) {
+              if (totalFromArray === 0) {
+                core.setFailed(`❌ Checklist on ${ticket} has no items. Add AC items to the checklist before merging.`);
+                return;
+              }
+              console.log(`Checklist (Olex API): ${checkedFromArray}/${totalFromArray} complete`);
+              if (checkedFromArray < totalFromArray) {
+                core.setFailed(`❌ Jira checklist incomplete on ${ticket}: ${checkedFromArray}/${totalFromArray} items checked. All AC must be done before merging.`);
+              } else {
+                console.log(`✅ All ${totalFromArray} checklist items checked on ${ticket} — ready to merge!`);
+              }
+              return;
+            }
+
+            // Attempt 2: issue properties — returns a summary object (not an array)
+            try {
+              const res = await fetch(
+                `${process.env.JIRA_BASE_URL}/rest/api/3/issue/${ticket}/properties/checklist`,
+                { headers }
+              );
+              if (res.ok) {
+                const data = await res.json();
+                console.log('Properties API response:', JSON.stringify(data).slice(0, 500));
+                const v = data.value;
+                if (v && typeof v === 'object' && 'allItems' in v) {
+                  if (v.allItems === 0) {
+                    core.setFailed(`❌ Checklist on ${ticket} has no items. Add AC items to the checklist before merging.`);
+                    return;
+                  }
+                  const total = v.allItems;
+                  const allDone = v.allItemsCompleted === true;
+                  const progress = v.progressText || `${v.progressPercent}%`;
+                  console.log(`Checklist (properties): ${progress}, allItemsCompleted=${allDone}`);
+                  if (!allDone) {
+                    core.setFailed(`❌ Jira checklist incomplete on ${ticket}: ${progress}. All AC must be done before merging.`);
+                  } else {
+                    console.log(`✅ All ${total} checklist items checked on ${ticket} — ready to merge!`);
+                  }
+                  return;
+                }
+              }
+            } catch(e) {
+              console.log('Properties endpoint failed:', e.message);
+            }
+
+            core.setFailed(`❌ No checklist found on ${ticket}. Add a checklist plugin (Herocoders / Olex) to the ticket, or add the 'skip-ac-gate' label to bypass this check.`);
+
+  # Job 2 — checks video/screenshot evidence exists
+  check-acceptance-criteria:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Extract Jira ticket from branch name
+        id: jira
+        run: |
+          TICKET=$(echo "${{ github.head_ref }}" | grep -oP '[A-Z]+-[0-9]+' | head -1)
+          if [ -z "$TICKET" ]; then
+            echo "❌ No Jira ticket found in branch name"
+            exit 1
+          fi
+          echo "ticket=$TICKET" >> $GITHUB_OUTPUT
+
+      - name: Check for video/screenshot evidence (PR body or Jira)
+        uses: actions/github-script@v7
+        env:
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        with:
+          script: |
+            const ticket = '${{ steps.jira.outputs.ticket }}';
+            const prBody = context.payload.pull_request.body || '';
+            const auth = Buffer.from(`${process.env.JIRA_EMAIL}:${process.env.JIRA_API_TOKEN}`).toString('base64');
+            const headers = { 'Authorization': `Basic ${auth}`, 'Accept': 'application/json' };
+
+            // Escape hatch: skip if issue has the 'skip-ac-gate' label
+            try {
+              const issueRes = await fetch(
+                `${process.env.JIRA_BASE_URL}/rest/api/3/issue/${ticket}?fields=labels`,
+                { headers }
+              );
+              if (issueRes.ok) {
+                const issueData = await issueRes.json();
+                const labels = (issueData.fields?.labels || []).map(l =>
+                  (typeof l === 'string' ? l : l.name || '').toLowerCase()
+                );
+                if (labels.includes('skip-ac-gate')) {
+                  console.log(`⏭️ Skipping evidence check for ${ticket} — 'skip-ac-gate' label found`);
+                  return;
+                }
+              }
+            } catch(e) {
+              console.log('Could not fetch issue labels:', e.message);
+            }
+
+            const videoLinkPattern = /loom\.com|youtube\.com|youtu\.be|drive\.google\.com|vimeo\.com/i;
+            const hasLinkInPR = videoLinkPattern.test(prBody);
+
+            const attachRes = await fetch(
+              `${process.env.JIRA_BASE_URL}/rest/api/3/issue/${ticket}?fields=attachment`,
+              { headers }
+            );
+            const attachData = await attachRes.json();
+            const attachments = attachData.fields?.attachment || [];
+
+            const videoExtensions = /\.(mp4|mov|avi|webm|mkv|m4v|qt)$/i;
+            const imageExtensions = /\.(png|jpg|jpeg|gif|webp)$/i;
+
+            const hasVideoAttachment = attachments.some(a => videoExtensions.test(a.filename));
+            const hasImageAttachment = attachments.some(a => imageExtensions.test(a.filename));
+
+            const commentsRes = await fetch(
+              `${process.env.JIRA_BASE_URL}/rest/api/3/issue/${ticket}/comment?maxResults=50`,
+              { headers }
+            );
+            const commentsData = await commentsRes.json();
+            const comments = commentsData.comments || [];
+
+            function extractAdfText(node) {
+              if (!node) return '';
+              if (typeof node === 'string') return node;
+              if (node.type === 'text') return node.text || '';
+              return (node.content || []).map(extractAdfText).join(' ');
+            }
+
+            const hasVideoInComments = comments.some(c => {
+              const text = typeof c.body === 'string' ? c.body : extractAdfText(c.body);
+              return videoLinkPattern.test(text) || /\b(video|mp4|mov|loom)\b/i.test(text);
+            });
+
+            const passed = hasLinkInPR || hasVideoAttachment || hasImageAttachment || hasVideoInComments;
+
+            if (!passed) {
+              core.setFailed(
+                `❌ No video or screenshot evidence found.\n\n` +
+                `Please do ONE of the following:\n` +
+                `  • Paste a Loom/YouTube/Drive link in the PR description\n` +
+                `  • Attach a screen recording (.mp4, .mov) to Jira ticket ${ticket}\n` +
+                `  • Add a screenshot to Jira ticket ${ticket}\n` +
+                `  • Post a video/image in a Jira comment on ${ticket}`
+              );
+            } else {
+              console.log('✅ Video/screenshot evidence found');
+            }
