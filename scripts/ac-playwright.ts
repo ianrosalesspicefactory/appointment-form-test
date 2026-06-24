@@ -336,8 +336,97 @@ async function runMobileScroll(browser: Browser): Promise<ScenarioResult[]> {
       });
     }
 
-    // ── Check D: no JS errors during the entire flow ──────────────────────
+    // ── Check E: overscroll-behavior: contain on the station list ────────
+    // Root cause from PM review: MobileStepContent.tsx has no overscroll-behavior
+    // on the inner scroll container, so iOS rubber-band momentum bleeds through
+    // to the LP body. After the fix, the scrollable list element must have
+    // overscroll-behavior set to "contain" or "none" on the Y axis.
+    const overscrollContained = await page.evaluate(() => {
+      // Find the scrollable container inside the dialog — the element that
+      // holds the station cards and has overflow-y: auto or scroll.
+      const dialog = document.querySelector('dialog');
+      if (!dialog) return { passed: false, reason: 'dialog not found' };
+
+      const scrollers = Array.from(dialog.querySelectorAll('*')).filter(el => {
+        const s = window.getComputedStyle(el as HTMLElement);
+        return s.overflowY === 'auto' || s.overflowY === 'scroll';
+      });
+
+      if (scrollers.length === 0) return { passed: false, reason: 'No overflow-y:auto/scroll element found inside dialog' };
+
+      // Every scrollable container inside the dialog must contain its overscroll
+      const offenders = scrollers.filter(el => {
+        const s = window.getComputedStyle(el as HTMLElement);
+        return s.overscrollBehaviorY !== 'contain' && s.overscrollBehaviorY !== 'none';
+      });
+
+      if (offenders.length === 0) return { passed: true, reason: '' };
+
+      const detail = offenders.slice(0, 3).map(el => {
+        const s = window.getComputedStyle(el as HTMLElement);
+        return `<${el.tagName.toLowerCase()} class="${(el as HTMLElement).className.slice(0, 60)}"> overscroll-behavior-y: ${s.overscrollBehaviorY}`;
+      }).join(' | ');
+
+      return { passed: false, reason: detail };
+    });
+
     const lastShot = path.join(screenshotDir, 'mobile-03-last-card.png');
+    results.push({
+      name: 'Station list scroll container has overscroll-behavior: contain — momentum does not bleed to LP',
+      passed: overscrollContained.passed,
+      screenshotPath: lastShot,
+      error: overscrollContained.passed
+        ? undefined
+        : `overscroll-behavior-y is not contain/none on: ${overscrollContained.reason}`,
+    });
+
+    // ── Check F: no competing nested scroll containers ────────────────────
+    // Root cause from PM review: MobileStepContent.tsx nests two overflow-auto
+    // containers (outer flex-1 overflow-auto wrapping inner max-h-[60vh]
+    // overflow-auto). The fix should flatten this to a single scrollable element.
+    // We verify: inside the dialog, there is no overflow-auto/scroll element
+    // that is a direct ancestor of another overflow-auto/scroll element.
+    const noNestedScrollers = await page.evaluate(() => {
+      const dialog = document.querySelector('dialog');
+      if (!dialog) return { passed: false, reason: 'dialog not found' };
+
+      const isScroller = (el: Element) => {
+        const s = window.getComputedStyle(el as HTMLElement);
+        return s.overflowY === 'auto' || s.overflowY === 'scroll';
+      };
+
+      const allScrollers = Array.from(dialog.querySelectorAll('*')).filter(isScroller);
+
+      // For each scroller, walk up its ancestors (still inside dialog) and
+      // check if any ancestor is also a scroller — that is a nested pair.
+      const nestedPairs: string[] = [];
+      for (const el of allScrollers) {
+        let ancestor = el.parentElement;
+        while (ancestor && ancestor !== dialog) {
+          if (isScroller(ancestor)) {
+            const childLabel  = `<${el.tagName.toLowerCase()} class="${(el as HTMLElement).className.slice(0, 50)}">`;
+            const parentLabel = `<${ancestor.tagName.toLowerCase()} class="${(ancestor as HTMLElement).className.slice(0, 50)}">`;
+            nestedPairs.push(`${parentLabel} > ${childLabel}`);
+            break;
+          }
+          ancestor = ancestor.parentElement;
+        }
+      }
+
+      if (nestedPairs.length === 0) return { passed: true, reason: '' };
+      return { passed: false, reason: nestedPairs.slice(0, 2).join(' AND ') };
+    });
+
+    results.push({
+      name: 'Station list uses a single scroll container — no nested overflow-auto elements competing',
+      passed: noNestedScrollers.passed,
+      screenshotPath: lastShot,
+      error: noNestedScrollers.passed
+        ? undefined
+        : `Nested scroll containers found (competing overflow-auto): ${noNestedScrollers.reason}`,
+    });
+
+    // ── Check D: no JS errors during the entire flow ──────────────────────
     results.push({
       name: 'No JS errors during the full mobile store-selector flow',
       passed: jsErrors.length === 0,
