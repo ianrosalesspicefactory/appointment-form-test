@@ -163,8 +163,8 @@ async function runFormInteraction(browser: Browser): Promise<ScenarioResult[]> {
 // Verified live against appointment-form.js on 2026-06-24.
 // Full navigation path confirmed by DOM inspection:
 //   1. Load page  →  form mounts into #appointment-form
-//   2. Click 対面相談  →  来院場所 section appears
-//   3. Click 一覧から選択する  →  <dialog> "クリニック対応駅一覧" opens
+//   2. Click 対面相談 / "In-Person Consultation"  →  来院場所 section appears
+//   3. Click 一覧から選択する / "Or select from supported stations"  →  <dialog> opens
 //   4. Click 関東  →  prefecture list renders
 //   5. Click 東京都  →  station grid renders (75+ items, total height ~5400px)
 //
@@ -210,13 +210,14 @@ async function runMobileScroll(browser: Browser): Promise<ScenarioResult[]> {
     await page.screenshot({ path: shot1 });
     console.log('    Captured: mobile-01-loaded.png');
 
-    // ── Step 2: click 対面相談 (In-person consultation) ──────────────────
-    await page.locator('button:has-text("対面相談")').tap();
+    // ── Step 2: click 対面相談 / In-Person Consultation ──────────────────
+    // Supports both Japanese and English form language settings.
+    await page.locator('button:has-text("対面相談"), button:has-text("In-Person Consultation")').first().tap();
     await page.waitForTimeout(1_000);
 
-    // ── Step 3: click 一覧から選択する to open the station dialog ─────────
+    // ── Step 3: open the station dialog ──────────────────────────────────
     // The form renders a native <dialog> element (confirmed by DOM inspection).
-    await page.locator('button:has-text("一覧から選択する")').tap();
+    await page.locator('button:has-text("一覧から選択する"), button:has-text("Or select from supported stations")').first().tap();
     await page.waitForSelector('dialog', { timeout: 8_000 });
     await page.waitForTimeout(800);
 

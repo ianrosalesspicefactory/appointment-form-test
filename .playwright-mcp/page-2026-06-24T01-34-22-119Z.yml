@@ -1,0 +1,1077 @@
+- generic:
+  - banner:
+    - generic:
+      - generic: Thursday, April 10, 2026
+      - navigation:
+        - link:
+          - /url: ../index.html
+          - text: Home
+        - link:
+          - /url: "#"
+          - text: Sign In
+        - link:
+          - /url: "#"
+          - text: Subscribe
+    - generic:
+      - heading [level=1]: AGA Hair Clinic Test Site
+      - paragraph: Trusted. Independent. In-depth.
+    - navigation:
+      - link:
+        - /url: ../index.html
+        - text: Home
+      - link:
+        - /url: "#world"
+        - text: World
+      - link:
+        - /url: "#tech"
+        - text: Technology
+      - link:
+        - /url: "#health"
+        - text: Health
+      - link:
+        - /url: "#science"
+        - text: Science
+  - generic:
+    - generic: Special Edition
+    - heading [level=2]: The Future of Health & Science
+    - paragraph: A curated collection of groundbreaking stories reshaping how we live, heal, and understand the world.
+  - generic:
+    - heading [level=3]: Top Stories
+  - generic:
+    - generic:
+      - img
+      - generic:
+        - generic: Health
+        - heading [level=3]: New mRNA Vaccine Shows 94% Efficacy Against Multiple Cancer Types
+        - paragraph: Phase III trial results published in The Lancet reveal that a personalized mRNA immunotherapy dramatically reduced tumor recurrence across breast, lung, and colon cancers. Researchers say this marks a turning point in oncology treatment paradigms.
+        - generic:
+          - generic: Dr. Asha Patel
+          - generic: 10 hours ago · 5 min read
+      - generic:
+        - list
+        - generic:
+          - banner:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - button:
+                    - img
+                    - img
+          - main:
+            - generic:
+              - generic:
+                - heading [level=1]: 初めてのカウンセリング 予約お申し込みフォーム
+                - paragraph:
+                  - img
+                  - text: こちらのフォームは当院を初めてご利用される方の予約申し込み専用ページです。
+                - paragraph: ※18歳未満の方の受診はお断りしております。
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: 受診希望時期（必須）
+                      - generic:
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 本日中
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 明日以降
+                      - paragraph: お申し込み完了後、当院から日時調整のお電話をさせていただきます。
+                  - generic:
+                    - generic:
+                      - heading [level=3]: カウンセリング方法（必須）
+                      - generic:
+                        - button:
+                          - generic:
+                            - img
+                          - generic: オンライン相談
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 対面相談
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: 来院場所（必須）
+                        - button:
+                          - img
+                          - text: 一覧から選択する
+                  - generic:
+                    - generic:
+                      - heading [level=3]: お客様の詳細入力
+                      - generic:
+                        - generic: お名前（必須）
+                        - generic:
+                          - textbox:
+                            - /placeholder: 姓（山田）
+                          - textbox:
+                            - /placeholder: 名（太郎）
+                      - generic:
+                        - generic: ふりがな（必須）
+                        - generic:
+                          - textbox:
+                            - /placeholder: せい（やまだ）
+                          - textbox:
+                            - /placeholder: めい（たろう）
+                      - generic:
+                        - generic: 性別（必須）
+                        - generic:
+                          - button:
+                            - generic:
+                              - img
+                            - generic: 男性
+                          - button:
+                            - generic:
+                              - img
+                            - generic: 女性
+                      - generic:
+                        - generic:
+                          - generic: 電話番号（必須）
+                          - textbox:
+                            - /placeholder: "08012345678"
+                          - paragraph: ※固定電話でのお申込みの場合は、お手数ですがお電話での予約をお願い致します。 フリーダイヤル (0120-8219-55)
+                        - generic:
+                          - generic: メールアドレス（必須）
+                          - textbox:
+                            - /placeholder: yamada.taro@gmail.com
+                    - generic:
+                      - generic:
+                        - heading [level=3]:
+                          - button:
+                            - generic:
+                              - text: キャンペーンコード
+                              - generic: (任意)
+                            - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]:
+                            - button:
+                              - generic: 利用規約とプライバシーポリシーをご確認ください
+                              - img
+                  - generic:
+                    - button [disabled]: 上記の内容で予約申し込み
+                    - paragraph: 未選択の項目があります
+          - contentinfo:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: お電話でのご予約・お問い合わせ
+                  - paragraph: 0120-8219-55
+              - paragraph: © 2016-2025 AGA ヘアクリニック
+    - generic:
+      - generic:
+        - img
+        - generic:
+          - generic: Science
+          - heading [level=3]: NASA's Europa Clipper Detects Organic Molecules Beneath the Ice
+          - generic:
+            - generic: Dr. Lin Wei
+            - generic: 6 hrs ago
+      - generic:
+        - img
+        - generic:
+          - generic: Health
+          - heading [level=3]: WHO Declares End to Mpox Public Health Emergency
+          - generic:
+            - generic: Dr. Amara Diallo
+            - generic: 20 hrs ago
+      - generic:
+        - img
+        - generic:
+          - generic: Science
+          - heading [level=3]: Archaeologists Unearth 3,200-Year-Old Bronze Age City in Turkey
+          - generic:
+            - generic: Dr. Ivan Petrov
+            - generic: 18 hrs ago
+  - generic:
+    - heading [level=3]: More to Read
+  - generic:
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: World
+        - heading [level=3]: World Leaders Reach Historic Climate Agreement at Geneva Summit
+        - paragraph: After three days of intense negotiations, delegates from 140 nations signed a sweeping accord committing to net-zero emissions by 2045.
+        - generic:
+          - generic: Elena Marchetti
+          - generic: 2 hrs ago · 5 min read
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: Technology
+        - heading [level=3]: Quantum Computing Breakthrough Promises to Reshape Cryptography
+        - paragraph: Researchers at MIT have demonstrated a 1,024-qubit processor that can factor large primes in seconds, raising urgent questions about digital security.
+        - generic:
+          - generic: James Okafor
+          - generic: 4 hrs ago · 4 min read
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: Health
+        - heading [level=3]: "The Loneliness Epidemic: How Modern Life Is Disconnecting Us"
+        - paragraph: A deep investigation into the rising tide of social isolation and what communities around the world are doing to reconnect.
+        - generic:
+          - generic: Sarah Connelly
+          - generic: Yesterday · 7 min read
+  - contentinfo:
+    - generic:
+      - generic:
+        - heading [level=2]: AGA Hair Clinic Test Site
+        - paragraph: Delivering quality journalism since 2010.
+      - generic:
+        - generic:
+          - heading [level=4]: Sections
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: World
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Technology
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Business
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Science
+        - generic:
+          - heading [level=4]: Company
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: About Us
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Careers
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Contact
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Advertise
+        - generic:
+          - heading [level=4]: Legal
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Privacy Policy
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Terms of Use
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Cookie Policy
+    - generic:
+      - paragraph: © 2026 The Daily Brief. All rights reserved.
+  - dialog "クリニック対応駅一覧" [ref=e260]:
+    - generic [ref=e262]:
+      - heading "クリニック対応駅一覧" [level=2] [ref=e263]
+      - generic [ref=e265]:
+        - generic: サロン：対面カウンセリングとオンライン診察のハイブリッド店舗
+    - generic [ref=e266]:
+      - generic [ref=e267]:
+        - heading "エリアを選択" [level=3] [ref=e268]
+        - generic [ref=e273]:
+          - button "関東" [ref=e274] [cursor=pointer]
+          - button "関西" [ref=e275] [cursor=pointer]
+          - button "九州" [ref=e276] [cursor=pointer]
+      - generic [ref=e277]:
+        - heading "都道府県を選択" [level=3] [ref=e278]
+        - generic [ref=e294]:
+          - button "東京都" [active] [ref=e295] [cursor=pointer]
+          - button "神奈川県" [ref=e296] [cursor=pointer]
+          - button "埼玉県" [ref=e297] [cursor=pointer]
+          - button "千葉県" [ref=e298] [cursor=pointer]
+          - button "茨城県" [ref=e299] [cursor=pointer]
+          - button "栃木県" [ref=e300] [cursor=pointer]
+          - button "群馬県" [ref=e301] [cursor=pointer]
+      - generic [ref=e283]:
+        - heading "クリニック/駅を選択" [level=3] [ref=e284]
+        - textbox "駅名で検索..." [ref=e305]
+        - generic [ref=e306]:
+          - generic [ref=e307] [cursor=pointer]:
+            - generic [ref=e308]:
+              - heading "月島" [level=4] [ref=e309]
+              - generic [ref=e310]:
+                - generic: クリニック
+            - generic [ref=e311]: 東京都
+          - generic [ref=e312] [cursor=pointer]:
+            - generic [ref=e313]:
+              - heading "秋葉原" [level=4] [ref=e314]
+              - generic [ref=e315]:
+                - generic: クリニック
+            - generic [ref=e316]: 東京都
+          - generic [ref=e317] [cursor=pointer]:
+            - generic [ref=e318]:
+              - heading "神田" [level=4] [ref=e319]
+              - generic [ref=e320]:
+                - generic: サロン
+            - generic [ref=e321]: 東京都
+          - generic [ref=e322] [cursor=pointer]:
+            - generic [ref=e323]:
+              - heading "白金台" [level=4] [ref=e324]
+              - generic [ref=e325]:
+                - generic: サロン
+            - generic [ref=e326]: 東京都
+          - generic [ref=e327] [cursor=pointer]:
+            - generic [ref=e328]:
+              - heading "茗荷谷" [level=4] [ref=e329]
+              - generic [ref=e330]:
+                - generic: サロン
+            - generic [ref=e331]: 東京都
+          - generic [ref=e332] [cursor=pointer]:
+            - generic [ref=e333]:
+              - heading "内幸町" [level=4] [ref=e334]
+              - generic [ref=e335]:
+                - generic: サロン
+            - generic [ref=e336]: 東京都
+          - generic [ref=e337] [cursor=pointer]:
+            - generic [ref=e338]:
+              - heading "虎ノ門ヒルズ" [level=4] [ref=e339]
+              - generic [ref=e340]:
+                - generic: サロン
+            - generic [ref=e341]: 東京都
+          - generic [ref=e342] [cursor=pointer]:
+            - generic [ref=e343]:
+              - heading "四ツ谷" [level=4] [ref=e344]
+              - generic [ref=e345]:
+                - generic: サロン
+            - generic [ref=e346]: 東京都
+          - generic [ref=e347] [cursor=pointer]:
+            - generic [ref=e348]:
+              - heading "木場" [level=4] [ref=e349]
+              - generic [ref=e350]:
+                - generic: サロン
+            - generic [ref=e351]: 東京都
+          - generic [ref=e352] [cursor=pointer]:
+            - generic [ref=e353]:
+              - heading "中野" [level=4] [ref=e354]
+              - generic [ref=e355]:
+                - generic: サロン
+            - generic [ref=e356]: 東京都
+          - generic [ref=e357] [cursor=pointer]:
+            - generic [ref=e358]:
+              - heading "大崎" [level=4] [ref=e359]
+              - generic [ref=e360]:
+                - generic: サロン
+            - generic [ref=e361]: 東京都
+          - generic [ref=e362] [cursor=pointer]:
+            - generic [ref=e363]:
+              - heading "信濃町" [level=4] [ref=e364]
+              - generic [ref=e365]:
+                - generic: サロン
+            - generic [ref=e366]: 東京都
+          - generic [ref=e367] [cursor=pointer]:
+            - generic [ref=e368]:
+              - heading "神楽坂" [level=4] [ref=e369]
+              - generic [ref=e370]:
+                - generic: サロン
+            - generic [ref=e371]: 東京都
+          - generic [ref=e372] [cursor=pointer]:
+            - generic [ref=e373]:
+              - heading "青山一丁目" [level=4] [ref=e374]
+              - generic [ref=e375]:
+                - generic: サロン
+            - generic [ref=e376]: 東京都
+          - generic [ref=e377] [cursor=pointer]:
+            - generic [ref=e378]:
+              - heading "人形町" [level=4] [ref=e379]
+              - generic [ref=e380]:
+                - generic: サロン
+            - generic [ref=e381]: 東京都
+          - generic [ref=e382] [cursor=pointer]:
+            - generic [ref=e383]:
+              - heading "京橋" [level=4] [ref=e384]
+              - generic [ref=e385]:
+                - generic: サロン
+            - generic [ref=e386]: 東京都
+          - generic [ref=e387] [cursor=pointer]:
+            - generic [ref=e388]:
+              - heading "北千住" [level=4] [ref=e389]
+              - generic [ref=e390]:
+                - generic: サロン
+            - generic [ref=e391]: 東京都
+          - generic [ref=e392] [cursor=pointer]:
+            - generic [ref=e393]:
+              - heading "本郷三丁目" [level=4] [ref=e394]
+              - generic [ref=e395]:
+                - generic: サロン
+            - generic [ref=e396]: 東京都
+          - generic [ref=e397] [cursor=pointer]:
+            - generic [ref=e398]:
+              - heading "上野広小路" [level=4] [ref=e399]
+              - generic [ref=e400]:
+                - generic: サロン
+            - generic [ref=e401]: 東京都
+          - generic [ref=e402] [cursor=pointer]:
+            - generic [ref=e403]:
+              - heading "茅場町" [level=4] [ref=e404]
+              - generic [ref=e405]:
+                - generic: サロン
+            - generic [ref=e406]: 東京都
+          - generic [ref=e407] [cursor=pointer]:
+            - generic [ref=e408]:
+              - heading "竹橋" [level=4] [ref=e409]
+              - generic [ref=e410]:
+                - generic: サロン
+            - generic [ref=e411]: 東京都
+          - generic [ref=e412] [cursor=pointer]:
+            - generic [ref=e413]:
+              - heading "三越前" [level=4] [ref=e414]
+              - generic [ref=e415]:
+                - generic: サロン
+            - generic [ref=e416]: 東京都
+          - generic [ref=e417] [cursor=pointer]:
+            - generic [ref=e418]:
+              - heading "新宿御苑前" [level=4] [ref=e419]
+              - generic [ref=e420]:
+                - generic: サロン
+            - generic [ref=e421]: 東京都
+          - generic [ref=e422] [cursor=pointer]:
+            - generic [ref=e423]:
+              - heading "田原町" [level=4] [ref=e424]
+              - generic [ref=e425]:
+                - generic: サロン
+            - generic [ref=e426]: 東京都
+          - generic [ref=e427] [cursor=pointer]:
+            - generic [ref=e428]:
+              - heading "目黒" [level=4] [ref=e429]
+              - generic [ref=e430]:
+                - generic: サロン
+            - generic [ref=e431]: 東京都
+          - generic [ref=e432] [cursor=pointer]:
+            - generic [ref=e433]:
+              - heading "綾瀬" [level=4] [ref=e434]
+              - generic [ref=e435]:
+                - generic: サロン
+            - generic [ref=e436]: 東京都
+          - generic [ref=e437] [cursor=pointer]:
+            - generic [ref=e438]:
+              - heading "日暮里" [level=4] [ref=e439]
+              - generic [ref=e440]:
+                - generic: サロン
+            - generic [ref=e441]: 東京都
+          - generic [ref=e442] [cursor=pointer]:
+            - generic [ref=e443]:
+              - heading "目白" [level=4] [ref=e444]
+              - generic [ref=e445]:
+                - generic: サロン
+            - generic [ref=e446]: 東京都
+          - generic [ref=e447] [cursor=pointer]:
+            - generic [ref=e448]:
+              - heading "永田町" [level=4] [ref=e449]
+              - generic [ref=e450]:
+                - generic: サロン
+            - generic [ref=e451]: 東京都
+          - generic [ref=e452] [cursor=pointer]:
+            - generic [ref=e453]:
+              - heading "後楽園" [level=4] [ref=e454]
+              - generic [ref=e455]:
+                - generic: サロン
+            - generic [ref=e456]: 東京都
+          - generic [ref=e457] [cursor=pointer]:
+            - generic [ref=e458]:
+              - heading "仲御徒町" [level=4] [ref=e459]
+              - generic [ref=e460]:
+                - generic: サロン
+            - generic [ref=e461]: 東京都
+          - generic [ref=e462] [cursor=pointer]:
+            - generic [ref=e463]:
+              - heading "中目黒" [level=4] [ref=e464]
+              - generic [ref=e465]:
+                - generic: サロン
+            - generic [ref=e466]: 東京都
+          - generic [ref=e467] [cursor=pointer]:
+            - generic [ref=e468]:
+              - heading "本蓮沼" [level=4] [ref=e469]
+              - generic [ref=e470]:
+                - generic: サロン
+            - generic [ref=e471]: 東京都
+          - generic [ref=e472] [cursor=pointer]:
+            - generic [ref=e473]:
+              - heading "九段下" [level=4] [ref=e474]
+              - generic [ref=e475]:
+                - generic: サロン
+            - generic [ref=e476]: 東京都
+          - generic [ref=e477] [cursor=pointer]:
+            - generic [ref=e478]:
+              - heading "西葛西" [level=4] [ref=e479]
+              - generic [ref=e480]:
+                - generic: サロン
+            - generic [ref=e481]: 東京都
+          - generic [ref=e482] [cursor=pointer]:
+            - generic [ref=e483]:
+              - heading "新橋" [level=4] [ref=e484]
+              - generic [ref=e485]:
+                - generic: サロン
+            - generic [ref=e486]: 東京都
+          - generic [ref=e487] [cursor=pointer]:
+            - generic [ref=e488]:
+              - heading "春日" [level=4] [ref=e489]
+              - generic [ref=e490]:
+                - generic: サロン
+            - generic [ref=e491]: 東京都
+          - generic [ref=e492] [cursor=pointer]:
+            - generic [ref=e493]:
+              - heading "三ノ輪" [level=4] [ref=e494]
+              - generic [ref=e495]:
+                - generic: サロン
+            - generic [ref=e496]: 東京都
+          - generic [ref=e497] [cursor=pointer]:
+            - generic [ref=e498]:
+              - heading "葛西" [level=4] [ref=e499]
+              - generic [ref=e500]:
+                - generic: サロン
+            - generic [ref=e501]: 東京都
+          - generic [ref=e502] [cursor=pointer]:
+            - generic [ref=e503]:
+              - heading "門前仲町" [level=4] [ref=e504]
+              - generic [ref=e505]:
+                - generic: サロン
+            - generic [ref=e506]: 東京都
+          - generic [ref=e507] [cursor=pointer]:
+            - generic [ref=e508]:
+              - heading "御成門" [level=4] [ref=e509]
+              - generic [ref=e510]:
+                - generic: サロン
+            - generic [ref=e511]: 東京都
+          - generic [ref=e512] [cursor=pointer]:
+            - generic [ref=e513]:
+              - heading "浅草" [level=4] [ref=e514]
+              - generic [ref=e515]:
+                - generic: サロン
+            - generic [ref=e516]: 東京都
+          - generic [ref=e517] [cursor=pointer]:
+            - generic [ref=e518]:
+              - heading "二重橋前" [level=4] [ref=e519]
+              - generic [ref=e520]:
+                - generic: サロン
+            - generic [ref=e521]: 東京都
+          - generic [ref=e522] [cursor=pointer]:
+            - generic [ref=e523]:
+              - heading "新中野" [level=4] [ref=e524]
+              - generic [ref=e525]:
+                - generic: サロン
+            - generic [ref=e526]: 東京都
+          - generic [ref=e527] [cursor=pointer]:
+            - generic [ref=e528]:
+              - heading "南阿佐ケ谷" [level=4] [ref=e529]
+              - generic [ref=e530]:
+                - generic: サロン
+            - generic [ref=e531]: 東京都
+          - generic [ref=e532] [cursor=pointer]:
+            - generic [ref=e533]:
+              - heading "新宿三丁目" [level=4] [ref=e534]
+              - generic [ref=e535]:
+                - generic: サロン
+            - generic [ref=e536]: 東京都
+          - generic [ref=e537] [cursor=pointer]:
+            - generic [ref=e538]:
+              - heading "三田" [level=4] [ref=e539]
+              - generic [ref=e540]:
+                - generic: サロン
+            - generic [ref=e541]: 東京都
+          - generic [ref=e542] [cursor=pointer]:
+            - generic [ref=e543]:
+              - heading "御徒町" [level=4] [ref=e544]
+              - generic [ref=e545]:
+                - generic: サロン
+            - generic [ref=e546]: 東京都
+          - generic [ref=e547] [cursor=pointer]:
+            - generic [ref=e548]:
+              - heading "赤羽" [level=4] [ref=e549]
+              - generic [ref=e550]:
+                - generic: サロン
+            - generic [ref=e551]: 東京都
+          - generic [ref=e552] [cursor=pointer]:
+            - generic [ref=e553]:
+              - heading "巣鴨" [level=4] [ref=e554]
+              - generic [ref=e555]:
+                - generic: サロン
+            - generic [ref=e556]: 東京都
+          - generic [ref=e557] [cursor=pointer]:
+            - generic [ref=e558]:
+              - heading "飯田橋" [level=4] [ref=e559]
+              - generic [ref=e560]:
+                - generic: サロン
+            - generic [ref=e561]: 東京都
+          - generic [ref=e562] [cursor=pointer]:
+            - generic [ref=e563]:
+              - heading "市ヶ谷" [level=4] [ref=e564]
+              - generic [ref=e565]:
+                - generic: サロン
+            - generic [ref=e566]: 東京都
+          - generic [ref=e567] [cursor=pointer]:
+            - generic [ref=e568]:
+              - heading "小伝馬町" [level=4] [ref=e569]
+              - generic [ref=e570]:
+                - generic: サロン
+            - generic [ref=e571]: 東京都
+          - generic [ref=e572] [cursor=pointer]:
+            - generic [ref=e573]:
+              - heading "御茶ノ水" [level=4] [ref=e574]
+              - generic [ref=e575]:
+                - generic: サロン
+            - generic [ref=e576]: 東京都
+          - generic [ref=e577] [cursor=pointer]:
+            - generic [ref=e578]:
+              - heading "溜池山王" [level=4] [ref=e579]
+              - generic [ref=e580]:
+                - generic: サロン
+            - generic [ref=e581]: 東京都
+          - generic [ref=e582] [cursor=pointer]:
+            - generic [ref=e583]:
+              - heading "新御茶ノ水" [level=4] [ref=e584]
+              - generic [ref=e585]:
+                - generic: サロン
+            - generic [ref=e586]: 東京都
+          - generic [ref=e587] [cursor=pointer]:
+            - generic [ref=e588]:
+              - heading "日比谷" [level=4] [ref=e589]
+              - generic [ref=e590]:
+                - generic: サロン
+            - generic [ref=e591]: 東京都
+          - generic [ref=e592] [cursor=pointer]:
+            - generic [ref=e593]:
+              - heading "淡路町" [level=4] [ref=e594]
+              - generic [ref=e595]:
+                - generic: サロン
+            - generic [ref=e596]: 東京都
+          - generic [ref=e597] [cursor=pointer]:
+            - generic [ref=e598]:
+              - heading "尾久" [level=4] [ref=e599]
+              - generic [ref=e600]:
+                - generic: サロン
+            - generic [ref=e601]: 東京都
+          - generic [ref=e602] [cursor=pointer]:
+            - generic [ref=e603]:
+              - heading "代々木公園" [level=4] [ref=e604]
+              - generic [ref=e605]:
+                - generic: サロン
+            - generic [ref=e606]: 東京都
+          - generic [ref=e607] [cursor=pointer]:
+            - generic [ref=e608]:
+              - heading "要町" [level=4] [ref=e609]
+              - generic [ref=e610]:
+                - generic: サロン
+            - generic [ref=e611]: 東京都
+          - generic [ref=e612] [cursor=pointer]:
+            - generic [ref=e613]:
+              - heading "霞ケ関" [level=4] [ref=e614]
+              - generic [ref=e615]:
+                - generic: サロン
+            - generic [ref=e616]: 東京都
+          - generic [ref=e617] [cursor=pointer]:
+            - generic [ref=e618]:
+              - heading "広尾" [level=4] [ref=e619]
+              - generic [ref=e620]:
+                - generic: サロン
+            - generic [ref=e621]: 東京都
+          - generic [ref=e622] [cursor=pointer]:
+            - generic [ref=e623]:
+              - heading "五反田" [level=4] [ref=e624]
+              - generic [ref=e625]:
+                - generic: サロン
+            - generic [ref=e626]: 東京都
+          - generic [ref=e627] [cursor=pointer]:
+            - generic [ref=e628]:
+              - heading "八丁堀" [level=4] [ref=e629]
+              - generic [ref=e630]:
+                - generic: サロン
+            - generic [ref=e631]: 東京都
+          - generic [ref=e632] [cursor=pointer]:
+            - generic [ref=e633]:
+              - heading "国会議事堂前" [level=4] [ref=e634]
+              - generic [ref=e635]:
+                - generic: サロン
+            - generic [ref=e636]: 東京都
+          - generic [ref=e637] [cursor=pointer]:
+            - generic [ref=e638]:
+              - heading "四谷三丁目" [level=4] [ref=e639]
+              - generic [ref=e640]:
+                - generic: サロン
+            - generic [ref=e641]: 東京都
+          - generic [ref=e642] [cursor=pointer]:
+            - generic [ref=e643]:
+              - heading "大塚" [level=4] [ref=e644]
+              - generic [ref=e645]:
+                - generic: サロン
+            - generic [ref=e646]: 東京都
+          - generic [ref=e647] [cursor=pointer]:
+            - generic [ref=e648]:
+              - heading "鶯谷" [level=4] [ref=e649]
+              - generic [ref=e650]:
+                - generic: サロン
+            - generic [ref=e651]: 東京都
+          - generic [ref=e652] [cursor=pointer]:
+            - generic [ref=e653]:
+              - heading "上野" [level=4] [ref=e654]
+              - generic [ref=e655]:
+                - generic: サロン
+            - generic [ref=e656]: 東京都
+          - generic [ref=e657] [cursor=pointer]:
+            - generic [ref=e658]:
+              - heading "新大久保" [level=4] [ref=e659]
+              - generic [ref=e660]:
+                - generic: サロン
+            - generic [ref=e661]: 東京都
+          - generic [ref=e662] [cursor=pointer]:
+            - generic [ref=e663]:
+              - heading "中野新橋" [level=4] [ref=e664]
+              - generic [ref=e665]:
+                - generic: サロン
+            - generic [ref=e666]: 東京都
+          - generic [ref=e667] [cursor=pointer]:
+            - generic [ref=e668]:
+              - heading "有楽町" [level=4] [ref=e669]
+              - generic [ref=e670]:
+                - generic: サロン
+            - generic [ref=e671]: 東京都
+          - generic [ref=e672] [cursor=pointer]:
+            - generic [ref=e673]:
+              - heading "日本橋" [level=4] [ref=e674]
+              - generic [ref=e675]:
+                - generic: サロン
+            - generic [ref=e676]: 東京都
+          - generic [ref=e677] [cursor=pointer]:
+            - generic [ref=e678]:
+              - heading "江戸川橋" [level=4] [ref=e679]
+              - generic [ref=e680]:
+                - generic: サロン
+            - generic [ref=e681]: 東京都
+          - generic [ref=e682] [cursor=pointer]:
+            - generic [ref=e683]:
+              - heading "銀座一丁目" [level=4] [ref=e684]
+              - generic [ref=e685]:
+                - generic: サロン
+            - generic [ref=e686]: 東京都
+          - generic [ref=e687] [cursor=pointer]:
+            - generic [ref=e688]:
+              - heading "東京" [level=4] [ref=e689]
+              - generic [ref=e690]:
+                - generic: サロン
+            - generic [ref=e691]: 東京都
+          - generic [ref=e692] [cursor=pointer]:
+            - generic [ref=e693]:
+              - heading "新板橋" [level=4] [ref=e694]
+              - generic [ref=e695]:
+                - generic: サロン
+            - generic [ref=e696]: 東京都
+          - generic [ref=e697] [cursor=pointer]:
+            - generic [ref=e698]:
+              - heading "新宿" [level=4] [ref=e699]
+              - generic [ref=e700]:
+                - generic: サロン
+            - generic [ref=e701]: 東京都
+          - generic [ref=e702] [cursor=pointer]:
+            - generic [ref=e703]:
+              - heading "東池袋" [level=4] [ref=e704]
+              - generic [ref=e705]:
+                - generic: サロン
+            - generic [ref=e706]: 東京都
+          - generic [ref=e707] [cursor=pointer]:
+            - generic [ref=e708]:
+              - heading "千駄木" [level=4] [ref=e709]
+              - generic [ref=e710]:
+                - generic: サロン
+            - generic [ref=e711]: 東京都
+          - generic [ref=e712] [cursor=pointer]:
+            - generic [ref=e713]:
+              - heading "明治神宮前" [level=4] [ref=e714]
+              - generic [ref=e715]:
+                - generic: サロン
+            - generic [ref=e716]: 東京都
+          - generic [ref=e717] [cursor=pointer]:
+            - generic [ref=e718]:
+              - heading "新高円寺" [level=4] [ref=e719]
+              - generic [ref=e720]:
+                - generic: サロン
+            - generic [ref=e721]: 東京都
+          - generic [ref=e722] [cursor=pointer]:
+            - generic [ref=e723]:
+              - heading "浜松町" [level=4] [ref=e724]
+              - generic [ref=e725]:
+                - generic: サロン
+            - generic [ref=e726]: 東京都
+          - generic [ref=e727] [cursor=pointer]:
+            - generic [ref=e728]:
+              - heading "大手町" [level=4] [ref=e729]
+              - generic [ref=e730]:
+                - generic: サロン
+            - generic [ref=e731]: 東京都
+          - generic [ref=e732] [cursor=pointer]:
+            - generic [ref=e733]:
+              - heading "西新宿" [level=4] [ref=e734]
+              - generic [ref=e735]:
+                - generic: サロン
+            - generic [ref=e736]: 東京都
+          - generic [ref=e737] [cursor=pointer]:
+            - generic [ref=e738]:
+              - heading "稲荷町" [level=4] [ref=e739]
+              - generic [ref=e740]:
+                - generic: サロン
+            - generic [ref=e741]: 東京都
+          - generic [ref=e742] [cursor=pointer]:
+            - generic [ref=e743]:
+              - heading "荻窪" [level=4] [ref=e744]
+              - generic [ref=e745]:
+                - generic: サロン
+            - generic [ref=e746]: 東京都
+          - generic [ref=e747] [cursor=pointer]:
+            - generic [ref=e748]:
+              - heading "池袋" [level=4] [ref=e749]
+              - generic [ref=e750]:
+                - generic: サロン
+            - generic [ref=e751]: 東京都
+          - generic [ref=e752] [cursor=pointer]:
+            - generic [ref=e753]:
+              - heading "恵比寿" [level=4] [ref=e754]
+              - generic [ref=e755]:
+                - generic: サロン
+            - generic [ref=e756]: 東京都
+          - generic [ref=e757] [cursor=pointer]:
+            - generic [ref=e758]:
+              - heading "志村坂上" [level=4] [ref=e759]
+              - generic [ref=e760]:
+                - generic: サロン
+            - generic [ref=e761]: 東京都
+          - generic [ref=e762] [cursor=pointer]:
+            - generic [ref=e763]:
+              - heading "西日暮里" [level=4] [ref=e764]
+              - generic [ref=e765]:
+                - generic: サロン
+            - generic [ref=e766]: 東京都
+          - generic [ref=e767] [cursor=pointer]:
+            - generic [ref=e768]:
+              - heading "高田馬場" [level=4] [ref=e769]
+              - generic [ref=e770]:
+                - generic: サロン
+            - generic [ref=e771]: 東京都
+          - generic [ref=e772] [cursor=pointer]:
+            - generic [ref=e773]:
+              - heading "地下鉄成増" [level=4] [ref=e774]
+              - generic [ref=e775]:
+                - generic: サロン
+            - generic [ref=e776]: 東京都
+          - generic [ref=e777] [cursor=pointer]:
+            - generic [ref=e778]:
+              - heading "水道橋" [level=4] [ref=e779]
+              - generic [ref=e780]:
+                - generic: サロン
+            - generic [ref=e781]: 東京都
+          - generic [ref=e782] [cursor=pointer]:
+            - generic [ref=e783]:
+              - heading "表参道" [level=4] [ref=e784]
+              - generic [ref=e785]:
+                - generic: サロン
+            - generic [ref=e786]: 東京都
+          - generic [ref=e787] [cursor=pointer]:
+            - generic [ref=e788]:
+              - heading "田町" [level=4] [ref=e789]
+              - generic [ref=e790]:
+                - generic: サロン
+            - generic [ref=e791]: 東京都
+          - generic [ref=e792] [cursor=pointer]:
+            - generic [ref=e793]:
+              - heading "早稲田" [level=4] [ref=e794]
+              - generic [ref=e795]:
+                - generic: サロン
+            - generic [ref=e796]: 東京都
+          - generic [ref=e797] [cursor=pointer]:
+            - generic [ref=e798]:
+              - heading "落合" [level=4] [ref=e799]
+              - generic [ref=e800]:
+                - generic: サロン
+            - generic [ref=e801]: 東京都
+          - generic [ref=e802] [cursor=pointer]:
+            - generic [ref=e803]:
+              - heading "原宿" [level=4] [ref=e804]
+              - generic [ref=e805]:
+                - generic: サロン
+            - generic [ref=e806]: 東京都
+          - generic [ref=e807] [cursor=pointer]:
+            - generic [ref=e808]:
+              - heading "新富町" [level=4] [ref=e809]
+              - generic [ref=e810]:
+                - generic: サロン
+            - generic [ref=e811]: 東京都
+          - generic [ref=e812] [cursor=pointer]:
+            - generic [ref=e813]:
+              - heading "六本木" [level=4] [ref=e814]
+              - generic [ref=e815]:
+                - generic: サロン
+            - generic [ref=e816]: 東京都
+          - generic [ref=e817] [cursor=pointer]:
+            - generic [ref=e818]:
+              - heading "赤坂" [level=4] [ref=e819]
+              - generic [ref=e820]:
+                - generic: サロン
+            - generic [ref=e821]: 東京都
+          - generic [ref=e822] [cursor=pointer]:
+            - generic [ref=e823]:
+              - heading "外苑前" [level=4] [ref=e824]
+              - generic [ref=e825]:
+                - generic: サロン
+            - generic [ref=e826]: 東京都
+          - generic [ref=e827] [cursor=pointer]:
+            - generic [ref=e828]:
+              - heading "赤坂見附" [level=4] [ref=e829]
+              - generic [ref=e830]:
+                - generic: サロン
+            - generic [ref=e831]: 東京都
+          - generic [ref=e832] [cursor=pointer]:
+            - generic [ref=e833]:
+              - heading "品川" [level=4] [ref=e834]
+              - generic [ref=e835]:
+                - generic: サロン
+            - generic [ref=e836]: 東京都
+          - generic [ref=e837] [cursor=pointer]:
+            - generic [ref=e838]:
+              - heading "築地" [level=4] [ref=e839]
+              - generic [ref=e840]:
+                - generic: サロン
+            - generic [ref=e841]: 東京都
+          - generic [ref=e842] [cursor=pointer]:
+            - generic [ref=e843]:
+              - heading "中野富士見町" [level=4] [ref=e844]
+              - generic [ref=e845]:
+                - generic: サロン
+            - generic [ref=e846]: 東京都
+          - generic [ref=e847] [cursor=pointer]:
+            - generic [ref=e848]:
+              - heading "大井町" [level=4] [ref=e849]
+              - generic [ref=e850]:
+                - generic: サロン
+            - generic [ref=e851]: 東京都
+          - generic [ref=e852] [cursor=pointer]:
+            - generic [ref=e853]:
+              - heading "末広町" [level=4] [ref=e854]
+              - generic [ref=e855]:
+                - generic: サロン
+            - generic [ref=e856]: 東京都
+          - generic [ref=e857] [cursor=pointer]:
+            - generic [ref=e858]:
+              - heading "麹町" [level=4] [ref=e859]
+              - generic [ref=e860]:
+                - generic: サロン
+            - generic [ref=e861]: 東京都
+          - generic [ref=e862] [cursor=pointer]:
+            - generic [ref=e863]:
+              - heading "乃木坂" [level=4] [ref=e864]
+              - generic [ref=e865]:
+                - generic: サロン
+            - generic [ref=e866]: 東京都
+          - generic [ref=e867] [cursor=pointer]:
+            - generic [ref=e868]:
+              - heading "駒込" [level=4] [ref=e869]
+              - generic [ref=e870]:
+                - generic: サロン
+            - generic [ref=e871]: 東京都
+          - generic [ref=e872] [cursor=pointer]:
+            - generic [ref=e873]:
+              - heading "板橋" [level=4] [ref=e874]
+              - generic [ref=e875]:
+                - generic: サロン
+            - generic [ref=e876]: 東京都
+          - generic [ref=e877] [cursor=pointer]:
+            - generic [ref=e878]:
+              - heading "新大塚" [level=4] [ref=e879]
+              - generic [ref=e880]:
+                - generic: サロン
+            - generic [ref=e881]: 東京都
+          - generic [ref=e882] [cursor=pointer]:
+            - generic [ref=e883]:
+              - heading "中野坂上" [level=4] [ref=e884]
+              - generic [ref=e885]:
+                - generic: サロン
+            - generic [ref=e886]: 東京都
+          - generic [ref=e887] [cursor=pointer]:
+            - generic [ref=e888]:
+              - heading "渋谷" [level=4] [ref=e889]
+              - generic [ref=e890]:
+                - generic: サロン
+            - generic [ref=e891]: 東京都
+          - generic [ref=e892] [cursor=pointer]:
+            - generic [ref=e893]:
+              - heading "国分寺" [level=4] [ref=e894]
+              - generic [ref=e895]:
+                - generic: サロン
+            - generic [ref=e896]: 東京都
+          - generic [ref=e897] [cursor=pointer]:
+            - generic [ref=e898]:
+              - heading "東銀座" [level=4] [ref=e899]
+              - generic [ref=e900]:
+                - generic: サロン
+            - generic [ref=e901]: 東京都
+          - generic [ref=e902] [cursor=pointer]:
+            - generic [ref=e903]:
+              - heading "白金高輪" [level=4] [ref=e904]
+              - generic [ref=e905]:
+                - generic: サロン
+            - generic [ref=e906]: 東京都
+          - generic [ref=e907] [cursor=pointer]:
+            - generic [ref=e908]:
+              - heading "東陽町" [level=4] [ref=e909]
+              - generic [ref=e910]:
+                - generic: サロン
+            - generic [ref=e911]: 東京都
+          - generic [ref=e912] [cursor=pointer]:
+            - generic [ref=e913]:
+              - heading "新御徒町" [level=4] [ref=e914]
+              - generic [ref=e915]:
+                - generic: サロン
+            - generic [ref=e916]: 東京都
+          - generic [ref=e917] [cursor=pointer]:
+            - generic [ref=e918]:
+              - heading "代々木" [level=4] [ref=e919]
+              - generic [ref=e920]:
+                - generic: サロン
+            - generic [ref=e921]: 東京都
+          - generic [ref=e922] [cursor=pointer]:
+            - generic [ref=e923]:
+              - heading "芝公園" [level=4] [ref=e924]
+              - generic [ref=e925]:
+                - generic: サロン
+            - generic [ref=e926]: 東京都
+          - generic [ref=e927] [cursor=pointer]:
+            - generic [ref=e928]:
+              - heading "神谷町" [level=4] [ref=e929]
+              - generic [ref=e930]:
+                - generic: サロン
+            - generic [ref=e931]: 東京都
+          - generic [ref=e932] [cursor=pointer]:
+            - generic [ref=e933]:
+              - heading "東高円寺" [level=4] [ref=e934]
+              - generic [ref=e935]:
+                - generic: サロン
+            - generic [ref=e936]: 東京都
+          - generic [ref=e937] [cursor=pointer]:
+            - generic [ref=e938]:
+              - heading "方南町" [level=4] [ref=e939]
+              - generic [ref=e940]:
+                - generic: サロン
+            - generic [ref=e941]: 東京都
+    - button "Close" [ref=e289] [cursor=pointer]:
+      - img [ref=e290]
+      - generic [ref=e293]: Close

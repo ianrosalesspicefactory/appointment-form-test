@@ -125,8 +125,8 @@ npm run ac:watch -- --ticket AGA-XXX
 
 This opens a Chromium window. You will see the browser:
 1. Load the LP page
-2. Click **対面相談**
-3. Click **一覧から選択する**
+2. Click **対面相談** (or **In-Person Consultation** in English mode)
+3. Click **一覧から選択する** (or **Or select from supported stations**)
 4. Navigate area → prefecture → station list
 5. Scroll to the last station card and tap it
 6. Take screenshots at each step

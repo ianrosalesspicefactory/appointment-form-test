@@ -1,0 +1,286 @@
+- generic:
+  - banner:
+    - generic:
+      - generic: Thursday, April 10, 2026
+      - navigation:
+        - link:
+          - /url: ../index.html
+          - text: Home
+        - link:
+          - /url: "#"
+          - text: Sign In
+        - link:
+          - /url: "#"
+          - text: Subscribe
+    - generic:
+      - heading [level=1]: AGA Hair Clinic Test Site
+      - paragraph: Trusted. Independent. In-depth.
+    - navigation:
+      - link:
+        - /url: ../index.html
+        - text: Home
+      - link:
+        - /url: "#world"
+        - text: World
+      - link:
+        - /url: "#tech"
+        - text: Technology
+      - link:
+        - /url: "#health"
+        - text: Health
+      - link:
+        - /url: "#science"
+        - text: Science
+  - generic:
+    - generic: Special Edition
+    - heading [level=2]: The Future of Health & Science
+    - paragraph: A curated collection of groundbreaking stories reshaping how we live, heal, and understand the world.
+  - generic:
+    - heading [level=3]: Top Stories
+  - generic:
+    - generic:
+      - img
+      - generic:
+        - generic: Health
+        - heading [level=3]: New mRNA Vaccine Shows 94% Efficacy Against Multiple Cancer Types
+        - paragraph: Phase III trial results published in The Lancet reveal that a personalized mRNA immunotherapy dramatically reduced tumor recurrence across breast, lung, and colon cancers. Researchers say this marks a turning point in oncology treatment paradigms.
+        - generic:
+          - generic: Dr. Asha Patel
+          - generic: 10 hours ago · 5 min read
+      - generic:
+        - list
+        - generic:
+          - banner:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - button [expanded]:
+                    - img
+                    - img
+          - main:
+            - generic:
+              - generic:
+                - heading [level=1]: 初めてのカウンセリング 予約お申し込みフォーム
+                - paragraph:
+                  - img
+                  - text: こちらのフォームは当院を初めてご利用される方の予約申し込み専用ページです。
+                - paragraph: ※18歳未満の方の受診はお断りしております。
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: 受診希望時期（必須）
+                      - generic:
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 本日中
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 明日以降
+                      - paragraph: お申し込み完了後、当院から日時調整のお電話をさせていただきます。
+                  - generic:
+                    - generic:
+                      - heading [level=3]: カウンセリング方法（必須）
+                      - generic:
+                        - button:
+                          - generic:
+                            - img
+                          - generic: オンライン相談
+                        - button:
+                          - generic:
+                            - img
+                          - generic: 対面相談
+                  - generic:
+                    - generic:
+                      - heading [level=3]: お客様の詳細入力
+                      - generic:
+                        - generic: お名前（必須）
+                        - generic:
+                          - textbox:
+                            - /placeholder: 姓（山田）
+                          - textbox:
+                            - /placeholder: 名（太郎）
+                      - generic:
+                        - generic: ふりがな（必須）
+                        - generic:
+                          - textbox:
+                            - /placeholder: せい（やまだ）
+                          - textbox:
+                            - /placeholder: めい（たろう）
+                      - generic:
+                        - generic: 性別（必須）
+                        - generic:
+                          - button:
+                            - generic:
+                              - img
+                            - generic: 男性
+                          - button:
+                            - generic:
+                              - img
+                            - generic: 女性
+                      - generic:
+                        - generic:
+                          - generic: 電話番号（必須）
+                          - textbox:
+                            - /placeholder: "08012345678"
+                          - paragraph: ※固定電話でのお申込みの場合は、お手数ですがお電話での予約をお願い致します。 フリーダイヤル (0120-8219-55)
+                        - generic:
+                          - generic: メールアドレス（必須）
+                          - textbox:
+                            - /placeholder: yamada.taro@gmail.com
+                    - generic:
+                      - generic:
+                        - heading [level=3]:
+                          - button:
+                            - generic:
+                              - text: キャンペーンコード
+                              - generic: (任意)
+                            - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]:
+                            - button:
+                              - generic: 利用規約とプライバシーポリシーをご確認ください
+                              - img
+                  - generic:
+                    - button [disabled]: 上記の内容で予約申し込み
+                    - paragraph: 未選択の項目があります
+          - contentinfo:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: お電話でのご予約・お問い合わせ
+                  - paragraph: 0120-8219-55
+              - paragraph: © 2016-2025 AGA ヘアクリニック
+    - generic:
+      - generic:
+        - img
+        - generic:
+          - generic: Science
+          - heading [level=3]: NASA's Europa Clipper Detects Organic Molecules Beneath the Ice
+          - generic:
+            - generic: Dr. Lin Wei
+            - generic: 6 hrs ago
+      - generic:
+        - img
+        - generic:
+          - generic: Health
+          - heading [level=3]: WHO Declares End to Mpox Public Health Emergency
+          - generic:
+            - generic: Dr. Amara Diallo
+            - generic: 20 hrs ago
+      - generic:
+        - img
+        - generic:
+          - generic: Science
+          - heading [level=3]: Archaeologists Unearth 3,200-Year-Old Bronze Age City in Turkey
+          - generic:
+            - generic: Dr. Ivan Petrov
+            - generic: 18 hrs ago
+  - generic:
+    - heading [level=3]: More to Read
+  - generic:
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: World
+        - heading [level=3]: World Leaders Reach Historic Climate Agreement at Geneva Summit
+        - paragraph: After three days of intense negotiations, delegates from 140 nations signed a sweeping accord committing to net-zero emissions by 2045.
+        - generic:
+          - generic: Elena Marchetti
+          - generic: 2 hrs ago · 5 min read
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: Technology
+        - heading [level=3]: Quantum Computing Breakthrough Promises to Reshape Cryptography
+        - paragraph: Researchers at MIT have demonstrated a 1,024-qubit processor that can factor large primes in seconds, raising urgent questions about digital security.
+        - generic:
+          - generic: James Okafor
+          - generic: 4 hrs ago · 4 min read
+    - article:
+      - generic:
+        - img
+      - generic:
+        - generic: Health
+        - heading [level=3]: "The Loneliness Epidemic: How Modern Life Is Disconnecting Us"
+        - paragraph: A deep investigation into the rising tide of social isolation and what communities around the world are doing to reconnect.
+        - generic:
+          - generic: Sarah Connelly
+          - generic: Yesterday · 7 min read
+  - contentinfo:
+    - generic:
+      - generic:
+        - heading [level=2]: AGA Hair Clinic Test Site
+        - paragraph: Delivering quality journalism since 2010.
+      - generic:
+        - generic:
+          - heading [level=4]: Sections
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: World
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Technology
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Business
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Science
+        - generic:
+          - heading [level=4]: Company
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: About Us
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Careers
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Contact
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Advertise
+        - generic:
+          - heading [level=4]: Legal
+          - list:
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Privacy Policy
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Terms of Use
+            - listitem:
+              - link:
+                - /url: "#"
+                - text: Cookie Policy
+    - generic:
+      - paragraph: © 2026 The Daily Brief. All rights reserved.
+  - menu "Japanese" [active] [ref=e252]:
+    - menuitem "Japanese 日本語" [ref=e253] [cursor=pointer]:
+      - img "Japanese" [ref=e254]
+      - generic [ref=e255]: 日本語
+    - menuitem "English English" [ref=e256] [cursor=pointer]:
+      - img "English" [ref=e257]
+      - generic [ref=e258]: English

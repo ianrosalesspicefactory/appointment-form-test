@@ -46,7 +46,7 @@ npm run ac:watch -- --ticket AGA-XXX
 
 A Chromium window opens and you will see it automatically:
 - Load the LP page
-- Click **対面相談** → **一覧から選択する**
+- Click **対面相談** (or **In-Person Consultation** in English mode) → **一覧から選択する** (or **Or select from supported stations**)
 - Select area → prefecture → scroll to the last station card
 - Tap the last card and check for 404s
 

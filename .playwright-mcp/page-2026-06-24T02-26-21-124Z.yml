@@ -1,0 +1,235 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Thursday, April 10, 2026
+      - navigation [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Sign In" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+        - link "Subscribe" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e9]:
+      - heading "AGA Hair Clinic Test Site" [level=1] [ref=e10]
+      - paragraph [ref=e11]: Trusted. Independent. In-depth.
+    - navigation [ref=e12]:
+      - link "Home" [ref=e13] [cursor=pointer]:
+        - /url: ../index.html
+      - link "World" [ref=e14] [cursor=pointer]:
+        - /url: "#world"
+      - link "Technology" [ref=e15] [cursor=pointer]:
+        - /url: "#tech"
+      - link "Health" [ref=e16] [cursor=pointer]:
+        - /url: "#health"
+      - link "Science" [ref=e17] [cursor=pointer]:
+        - /url: "#science"
+  - generic [ref=e18]:
+    - generic [ref=e19]: Special Edition
+    - heading "The Future of Health & Science" [level=2] [ref=e20]
+    - paragraph [ref=e21]: A curated collection of groundbreaking stories reshaping how we live, heal, and understand the world.
+  - heading "Top Stories" [level=3] [ref=e23]
+  - generic [ref=e24]:
+    - generic [ref=e25] [cursor=pointer]:
+      - img "mRNA Vaccine" [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]: Health
+        - heading "New mRNA Vaccine Shows 94% Efficacy Against Multiple Cancer Types" [level=3] [ref=e29]
+        - paragraph [ref=e30]: Phase III trial results published in The Lancet reveal that a personalized mRNA immunotherapy dramatically reduced tumor recurrence across breast, lung, and colon cancers. Researchers say this marks a turning point in oncology treatment paradigms.
+        - generic [ref=e31]:
+          - generic [ref=e32]: Dr. Asha Patel
+          - generic [ref=e33]: 10 hours ago · 5 min read
+      - generic [ref=e34]:
+        - region "Notifications (F8)":
+          - list
+        - generic [ref=e134]:
+          - banner [ref=e135]:
+            - generic [ref=e137]:
+              - img "AGAヘアクリニック" [ref=e139]
+              - button "English" [active] [ref=e259]:
+                - img "English" [ref=e260]
+                - img
+          - main [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - heading "First Counseling Reservation Application Form" [level=1] [ref=e261]
+                - paragraph [ref=e147]:
+                  - img [ref=e148]
+                  - text: This form is exclusively for first-time visitors to our clinic.
+                - paragraph [ref=e150]: ※We do not accept patients under 18 years old.
+              - generic [ref=e152]:
+                - generic [ref=e154]:
+                  - heading "Desired Time (Required)" [level=3] [ref=e262]
+                  - generic [ref=e156]:
+                    - button "Today" [ref=e263]:
+                      - img [ref=e159]
+                      - generic [ref=e162]: Today
+                    - button "Later Date" [ref=e264]:
+                      - img [ref=e165]
+                      - generic [ref=e169]: Later Date
+                  - paragraph [ref=e170]: After your application is complete, we will call you to arrange the details.
+                - generic [ref=e172]:
+                  - heading "Consultation Method (Required)" [level=3] [ref=e265]
+                  - generic [ref=e174]:
+                    - button "Online Consultation" [ref=e266]:
+                      - img [ref=e177]
+                      - generic [ref=e180]: Online Consultation
+                    - button "In-Person Consultation" [ref=e267]:
+                      - img [ref=e183]
+                      - generic [ref=e188]: In-Person Consultation
+                - generic [ref=e281]:
+                  - heading "Clinic Location (Required)" [level=3] [ref=e282]
+                  - button "Or select from supported stations" [ref=e283]:
+                    - img
+                    - text: Or select from supported stations
+                - generic [ref=e189]:
+                  - generic [ref=e190]:
+                    - heading "Personal Details" [level=3] [ref=e268]
+                    - generic [ref=e192]:
+                      - generic [ref=e193]: Full Name (Required)
+                      - generic [ref=e194]:
+                        - textbox "Last Name" [ref=e269]
+                        - textbox "First Name" [ref=e270]
+                    - generic [ref=e197]:
+                      - generic [ref=e198]: Furigana (Required)
+                      - generic [ref=e199]:
+                        - textbox "Last Name (Furigana)" [ref=e271]
+                        - textbox "First Name (Furigana)" [ref=e272]
+                    - generic [ref=e202]:
+                      - generic [ref=e203]: Gender (Required)
+                      - generic [ref=e204]:
+                        - button "Male" [ref=e273]:
+                          - img [ref=e207]
+                          - generic [ref=e211]: Male
+                        - button "Female" [ref=e274]:
+                          - img [ref=e214]
+                          - generic [ref=e217]: Female
+                    - generic [ref=e218]:
+                      - generic [ref=e219]:
+                        - generic [ref=e220]: Phone Number (Required)
+                        - textbox "08012345678" [ref=e221]
+                        - paragraph [ref=e222]: ※For fixed-line phones, please make a reservation by phone. Toll-free number (0120-8219-55)
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: Email Address (Required)
+                        - textbox "yamada.taro@gmail.com" [ref=e225]
+                  - heading "Promo Code (Optional)" [level=3] [ref=e275]:
+                    - button "Promo Code (Optional)" [ref=e276]:
+                      - generic [ref=e230]:
+                        - text: Promo Code
+                        - generic [ref=e231]: (Optional)
+                      - img [ref=e232]
+                - heading "Please review the Terms of Service and Privacy Policy" [level=3] [ref=e277]:
+                  - button "Please review the Terms of Service and Privacy Policy" [ref=e278]:
+                    - generic [ref=e240]: Please review the Terms of Service and Privacy Policy
+                    - img [ref=e241]
+                - generic [ref=e243]:
+                  - button "Confirm Reservation" [disabled]
+                  - paragraph [ref=e244]: Please complete all required fields
+          - contentinfo [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e248]:
+                - paragraph [ref=e249]: Reservations and inquiries by phone
+                - paragraph [ref=e250]: 0120-8219-55
+              - paragraph [ref=e251]: © 2016-2025 AGA Hair Clinic
+    - generic [ref=e37]:
+      - generic [ref=e38] [cursor=pointer]:
+        - img "Europa" [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Science
+          - heading "NASA's Europa Clipper Detects Organic Molecules Beneath the Ice" [level=3] [ref=e42]
+          - generic [ref=e43]:
+            - generic [ref=e44]: Dr. Lin Wei
+            - generic [ref=e45]: 6 hrs ago
+      - generic [ref=e46] [cursor=pointer]:
+        - img "Mpox" [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]: Health
+          - heading "WHO Declares End to Mpox Public Health Emergency" [level=3] [ref=e50]
+          - generic [ref=e51]:
+            - generic [ref=e52]: Dr. Amara Diallo
+            - generic [ref=e53]: 20 hrs ago
+      - generic [ref=e54] [cursor=pointer]:
+        - img "Archaeology" [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]: Science
+          - heading "Archaeologists Unearth 3,200-Year-Old Bronze Age City in Turkey" [level=3] [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]: Dr. Ivan Petrov
+            - generic [ref=e61]: 18 hrs ago
+  - heading "More to Read" [level=3] [ref=e63]
+  - generic [ref=e64]:
+    - article [ref=e65] [cursor=pointer]:
+      - img "Climate" [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e69]: World
+        - heading "World Leaders Reach Historic Climate Agreement at Geneva Summit" [level=3] [ref=e70]
+        - paragraph [ref=e71]: After three days of intense negotiations, delegates from 140 nations signed a sweeping accord committing to net-zero emissions by 2045.
+        - generic [ref=e72]:
+          - generic [ref=e73]: Elena Marchetti
+          - generic [ref=e74]: 2 hrs ago · 5 min read
+    - article [ref=e75] [cursor=pointer]:
+      - img "Quantum" [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]: Technology
+        - heading "Quantum Computing Breakthrough Promises to Reshape Cryptography" [level=3] [ref=e80]
+        - paragraph [ref=e81]: Researchers at MIT have demonstrated a 1,024-qubit processor that can factor large primes in seconds, raising urgent questions about digital security.
+        - generic [ref=e82]:
+          - generic [ref=e83]: James Okafor
+          - generic [ref=e84]: 4 hrs ago · 4 min read
+    - article [ref=e85] [cursor=pointer]:
+      - img "Loneliness" [ref=e87]
+      - generic [ref=e88]:
+        - generic [ref=e89]: Health
+        - 'heading "The Loneliness Epidemic: How Modern Life Is Disconnecting Us" [level=3] [ref=e90]'
+        - paragraph [ref=e91]: A deep investigation into the rising tide of social isolation and what communities around the world are doing to reconnect.
+        - generic [ref=e92]:
+          - generic [ref=e93]: Sarah Connelly
+          - generic [ref=e94]: Yesterday · 7 min read
+  - contentinfo [ref=e95]:
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - heading "AGA Hair Clinic Test Site" [level=2] [ref=e98]
+        - paragraph [ref=e99]: Delivering quality journalism since 2010.
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - heading "Sections" [level=4] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - link "World" [ref=e105] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e106]:
+              - link "Technology" [ref=e107] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e108]:
+              - link "Business" [ref=e109] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e110]:
+              - link "Science" [ref=e111] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e112]:
+          - heading "Company" [level=4] [ref=e113]
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - link "About Us" [ref=e116] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e117]:
+              - link "Careers" [ref=e118] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e119]:
+              - link "Contact" [ref=e120] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e121]:
+              - link "Advertise" [ref=e122] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e123]:
+          - heading "Legal" [level=4] [ref=e124]
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - link "Privacy Policy" [ref=e127] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e128]:
+              - link "Terms of Use" [ref=e129] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e130]:
+              - link "Cookie Policy" [ref=e131] [cursor=pointer]:
+                - /url: "#"
+    - paragraph [ref=e133]: © 2026 The Daily Brief. All rights reserved.

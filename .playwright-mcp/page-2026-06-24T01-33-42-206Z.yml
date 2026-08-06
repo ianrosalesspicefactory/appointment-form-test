@@ -1,0 +1,235 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Thursday, April 10, 2026
+      - navigation [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Sign In" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+        - link "Subscribe" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e9]:
+      - heading "AGA Hair Clinic Test Site" [level=1] [ref=e10]
+      - paragraph [ref=e11]: Trusted. Independent. In-depth.
+    - navigation [ref=e12]:
+      - link "Home" [ref=e13] [cursor=pointer]:
+        - /url: ../index.html
+      - link "World" [ref=e14] [cursor=pointer]:
+        - /url: "#world"
+      - link "Technology" [ref=e15] [cursor=pointer]:
+        - /url: "#tech"
+      - link "Health" [ref=e16] [cursor=pointer]:
+        - /url: "#health"
+      - link "Science" [ref=e17] [cursor=pointer]:
+        - /url: "#science"
+  - generic [ref=e18]:
+    - generic [ref=e19]: Special Edition
+    - heading "The Future of Health & Science" [level=2] [ref=e20]
+    - paragraph [ref=e21]: A curated collection of groundbreaking stories reshaping how we live, heal, and understand the world.
+  - heading "Top Stories" [level=3] [ref=e23]
+  - generic [ref=e24]:
+    - generic [ref=e25] [cursor=pointer]:
+      - img "mRNA Vaccine" [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]: Health
+        - heading "New mRNA Vaccine Shows 94% Efficacy Against Multiple Cancer Types" [level=3] [ref=e29]
+        - paragraph [ref=e30]: Phase III trial results published in The Lancet reveal that a personalized mRNA immunotherapy dramatically reduced tumor recurrence across breast, lung, and colon cancers. Researchers say this marks a turning point in oncology treatment paradigms.
+        - generic [ref=e31]:
+          - generic [ref=e32]: Dr. Asha Patel
+          - generic [ref=e33]: 10 hours ago · 5 min read
+      - generic [ref=e34]:
+        - region "Notifications (F8)":
+          - list
+        - generic [ref=e136]:
+          - banner [ref=e137]:
+            - generic [ref=e139]:
+              - img "AGAヘアクリニック" [ref=e141]
+              - button "Japanese" [ref=e143]:
+                - img "Japanese" [ref=e144]
+                - img
+          - main [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - heading "初めてのカウンセリング 予約お申し込みフォーム" [level=1] [ref=e148]
+                - paragraph [ref=e149]:
+                  - img [ref=e150]
+                  - text: こちらのフォームは当院を初めてご利用される方の予約申し込み専用ページです。
+                - paragraph [ref=e152]: ※18歳未満の方の受診はお断りしております。
+              - generic [ref=e154]:
+                - generic [ref=e156]:
+                  - heading "受診希望時期（必須）" [level=3] [ref=e157]
+                  - generic [ref=e158]:
+                    - button "本日中" [ref=e159]:
+                      - img [ref=e161]
+                      - generic [ref=e164]: 本日中
+                    - button "明日以降" [ref=e165]:
+                      - img [ref=e167]
+                      - generic [ref=e171]: 明日以降
+                  - paragraph [ref=e172]: お申し込み完了後、当院から日時調整のお電話をさせていただきます。
+                - generic [ref=e174]:
+                  - heading "カウンセリング方法（必須）" [level=3] [ref=e175]
+                  - generic [ref=e176]:
+                    - button "オンライン相談" [ref=e177]:
+                      - img [ref=e179]
+                      - generic [ref=e182]: オンライン相談
+                    - button "対面相談" [active] [ref=e183]:
+                      - img [ref=e185]
+                      - generic [ref=e190]: 対面相談
+                - generic [ref=e256]:
+                  - heading "来院場所（必須）" [level=3] [ref=e257]
+                  - button "一覧から選択する" [ref=e258]:
+                    - img
+                    - text: 一覧から選択する
+                - generic [ref=e191]:
+                  - generic [ref=e192]:
+                    - heading "お客様の詳細入力" [level=3] [ref=e193]
+                    - generic [ref=e194]:
+                      - generic [ref=e195]: お名前（必須）
+                      - generic [ref=e196]:
+                        - textbox "姓（山田）" [ref=e197]
+                        - textbox "名（太郎）" [ref=e198]
+                    - generic [ref=e199]:
+                      - generic [ref=e200]: ふりがな（必須）
+                      - generic [ref=e201]:
+                        - textbox "せい（やまだ）" [ref=e202]
+                        - textbox "めい（たろう）" [ref=e203]
+                    - generic [ref=e204]:
+                      - generic [ref=e205]: 性別（必須）
+                      - generic [ref=e206]:
+                        - button "男性" [ref=e207]:
+                          - img [ref=e209]
+                          - generic [ref=e213]: 男性
+                        - button "女性" [ref=e214]:
+                          - img [ref=e216]
+                          - generic [ref=e219]: 女性
+                    - generic [ref=e220]:
+                      - generic [ref=e221]:
+                        - generic [ref=e222]: 電話番号（必須）
+                        - textbox "08012345678" [ref=e223]
+                        - paragraph [ref=e224]: ※固定電話でのお申込みの場合は、お手数ですがお電話での予約をお願い致します。 フリーダイヤル (0120-8219-55)
+                      - generic [ref=e225]:
+                        - generic [ref=e226]: メールアドレス（必須）
+                        - textbox "yamada.taro@gmail.com" [ref=e227]
+                  - heading "キャンペーンコード (任意)" [level=3] [ref=e230]:
+                    - button "キャンペーンコード (任意)" [ref=e231]:
+                      - generic [ref=e232]:
+                        - text: キャンペーンコード
+                        - generic [ref=e233]: (任意)
+                      - img [ref=e234]
+                - heading "利用規約とプライバシーポリシーをご確認ください" [level=3] [ref=e240]:
+                  - button "利用規約とプライバシーポリシーをご確認ください" [ref=e241]:
+                    - generic [ref=e242]: 利用規約とプライバシーポリシーをご確認ください
+                    - img [ref=e243]
+                - generic [ref=e245]:
+                  - button "上記の内容で予約申し込み" [disabled]
+                  - paragraph [ref=e246]: 未選択の項目があります
+          - contentinfo [ref=e247]:
+            - generic [ref=e248]:
+              - generic [ref=e250]:
+                - paragraph [ref=e251]: お電話でのご予約・お問い合わせ
+                - paragraph [ref=e252]: 0120-8219-55
+              - paragraph [ref=e253]: © 2016-2025 AGA ヘアクリニック
+    - generic [ref=e39]:
+      - generic [ref=e40] [cursor=pointer]:
+        - img "Europa" [ref=e41]
+        - generic [ref=e42]:
+          - generic [ref=e43]: Science
+          - heading "NASA's Europa Clipper Detects Organic Molecules Beneath the Ice" [level=3] [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: Dr. Lin Wei
+            - generic [ref=e47]: 6 hrs ago
+      - generic [ref=e48] [cursor=pointer]:
+        - img "Mpox" [ref=e49]
+        - generic [ref=e50]:
+          - generic [ref=e51]: Health
+          - heading "WHO Declares End to Mpox Public Health Emergency" [level=3] [ref=e52]
+          - generic [ref=e53]:
+            - generic [ref=e54]: Dr. Amara Diallo
+            - generic [ref=e55]: 20 hrs ago
+      - generic [ref=e56] [cursor=pointer]:
+        - img "Archaeology" [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]: Science
+          - heading "Archaeologists Unearth 3,200-Year-Old Bronze Age City in Turkey" [level=3] [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]: Dr. Ivan Petrov
+            - generic [ref=e63]: 18 hrs ago
+  - heading "More to Read" [level=3] [ref=e65]
+  - generic [ref=e66]:
+    - article [ref=e67] [cursor=pointer]:
+      - img "Climate" [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]: World
+        - heading "World Leaders Reach Historic Climate Agreement at Geneva Summit" [level=3] [ref=e72]
+        - paragraph [ref=e73]: After three days of intense negotiations, delegates from 140 nations signed a sweeping accord committing to net-zero emissions by 2045.
+        - generic [ref=e74]:
+          - generic [ref=e75]: Elena Marchetti
+          - generic [ref=e76]: 2 hrs ago · 5 min read
+    - article [ref=e77] [cursor=pointer]:
+      - img "Quantum" [ref=e79]
+      - generic [ref=e80]:
+        - generic [ref=e81]: Technology
+        - heading "Quantum Computing Breakthrough Promises to Reshape Cryptography" [level=3] [ref=e82]
+        - paragraph [ref=e83]: Researchers at MIT have demonstrated a 1,024-qubit processor that can factor large primes in seconds, raising urgent questions about digital security.
+        - generic [ref=e84]:
+          - generic [ref=e85]: James Okafor
+          - generic [ref=e86]: 4 hrs ago · 4 min read
+    - article [ref=e87] [cursor=pointer]:
+      - img "Loneliness" [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e91]: Health
+        - 'heading "The Loneliness Epidemic: How Modern Life Is Disconnecting Us" [level=3] [ref=e92]'
+        - paragraph [ref=e93]: A deep investigation into the rising tide of social isolation and what communities around the world are doing to reconnect.
+        - generic [ref=e94]:
+          - generic [ref=e95]: Sarah Connelly
+          - generic [ref=e96]: Yesterday · 7 min read
+  - contentinfo [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - heading "AGA Hair Clinic Test Site" [level=2] [ref=e100]
+        - paragraph [ref=e101]: Delivering quality journalism since 2010.
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - heading "Sections" [level=4] [ref=e104]
+          - list [ref=e105]:
+            - listitem [ref=e106]:
+              - link "World" [ref=e107] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e108]:
+              - link "Technology" [ref=e109] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e110]:
+              - link "Business" [ref=e111] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e112]:
+              - link "Science" [ref=e113] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e114]:
+          - heading "Company" [level=4] [ref=e115]
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "About Us" [ref=e118] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e119]:
+              - link "Careers" [ref=e120] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e121]:
+              - link "Contact" [ref=e122] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e123]:
+              - link "Advertise" [ref=e124] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e125]:
+          - heading "Legal" [level=4] [ref=e126]
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "Privacy Policy" [ref=e129] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e130]:
+              - link "Terms of Use" [ref=e131] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e132]:
+              - link "Cookie Policy" [ref=e133] [cursor=pointer]:
+                - /url: "#"
+    - paragraph [ref=e135]: © 2026 The Daily Brief. All rights reserved.
